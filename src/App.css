@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #27353a;
+  height: 80%;
+  margin: 0px;
+  padding: 0;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+nav {
+  border-top: thin #5b7d87 solid;
+  border-bottom: thin #5b7d87 solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+nav a {
+  padding: 10px;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav a:active {
+  /* Isn't currently working */
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #eeb778;
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Chat Styling */
+#chat {
+  background: #5b7d87;
+  margin: 20px;
+  border-radius: 10px;
+  color: #fef9ff;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+#chat section input {
+  padding: 5px;
+  margin: 10px;
+  width: 40%;
+  background: #5b7d87;
+  border: none;
+  color: #fef9ff;
+  font-weight: bold;
+}
+
+#chatInput:focus,
+#submit:focus {
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fef9ff;
+  font-weight: bold;
+  opacity: 1; /* Firefox */
+}
+
+hr {
+  width: 40%;
+  color: #fef9ff;
+  margin-top: 0px;
+}
+
+/* iMessage style Message Styling */
+#messages {
+  background: #fafafa;
+  border-radius: 20px;
+  width: 60%;
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.message.user {
+  border: 2px solid #5b7d87;
+  border-radius: 20px;
+  background: #9ed6e7;
+  width: 40%;
+  padding: 20px;
+  margin: 15px;
+  display: block;
+  float: right;
+  clear: right;
+}
+
+.message.watson {
+  border: 2px solid #5b7d87;
+  border-radius: 20px;
+  background: #fef9ff;
+  /* background: #9ee7ba; */
+  width: 40%;
+  padding: 20px;
+  margin: 10px;
+  display: block;
+  float: left;
+  clear: left;
+}
+
+.messageContainer {
+  margin: 10px;
+}
+
+#scrollingChat {
+  margin: 0.75rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 4rem);
+}
