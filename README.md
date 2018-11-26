@@ -12,7 +12,7 @@ Ask Watson about how the IBM Finish Line 2018 Event in Boston went.
   
     npm install
     
-  3. Create an application instance with Express.js server on http://localhost:5090/ and React/Redux application served from        http://localhost:3000/ with the command:
+  3. Navigate to the /server directory and create an application instance with Express.js server on http://localhost:5090/ and      React/Redux application served from        http://localhost:3000/ with the command:
     
     npm run dev
       
