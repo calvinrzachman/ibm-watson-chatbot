@@ -26,4 +26,10 @@ Ask Watson about how the IBM Finish Line 2018 Event in Boston went.
   And see what Watson has to say   
   
 
+
+
+
+
+
+
 Note: This version of the application was made using create-react-app for configuration and setup. As a demonstration of familiarity with front end development, a vanilla version (no frameworks) of the client side code was created as well and can be found in the folder /vanilla
