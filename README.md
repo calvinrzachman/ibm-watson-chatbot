@@ -16,7 +16,7 @@ Ask Watson about how the IBM Finish Line 2018 Event in Boston went.
     
     npm run dev
       
-  ### Chat with Watson
+  ### Chat with Watson (in Development)
   Discuss the IBM Finish Line 2018 Event with Watson. Ask questions like:
     
     Where was the event?
