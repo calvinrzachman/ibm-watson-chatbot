@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Watson Assistant</title>
+
+    <!-- Stylesheet -->
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header><h1>IBM Finish Line 2018 - Boston ChatBot</h1></header>
+
+    <nav>
+      <a href="index.html">Chat</a> <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div id="messages">
+      <!-- An iMessage style UI for displaying conversation with Watson -->
+      <section>
+        <article><!-- insert conversation with Watson here --></article>
+      </section>
+    </div>
+
+    <div id="chat">
+      <section>Ask Watson about the IBM Finish Line Event</section>
+      <section>
+        <form action="" onsubmit="submitMessage()">
+          <label for="chatInput" class="required"></label>
+          <input
+            id="chatInput"
+            type="text"
+            placeholder="Type here..."
+            autocomplete="off"
+            required
+          />
+          <hr />
+          <input type="submit" id="submit" on />
+        </form>
+      </section>
+      <section>Find out who stood out</section>
+    </div>
+
+    <footer>
+      <p>
+        711 4th St SE <br />
+        Minneapolis, MN 55414 <br />
+        651.308.8022
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <!-- Event Handler -->
+    <!-- Place this in an external helper file -->
+    <script type="text/javascript">
+      function submitMessage() {
+        event.preventDefault();
+        const value = document.getElementById("chatInput").value;
+        console.log(value);
+        displayMessage(value, true);
+        document.getElementById("chatInput").value = "";
+      }
+    </script>
+  </body>
+</html>

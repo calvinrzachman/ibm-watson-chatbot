@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SafeWalk - Contact</title>
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <style>
+        #contact-form {
+            margin: auto;
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 25px
+        }
+
+        form input,
+        form select {
+            padding: 5px;
+            margin: 10px
+        }
+
+        textarea {
+            width: 400px;
+            margin: 10px;
+            padding: 5px
+        }
+
+        .required {
+            font-weight: bold
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SafeWalk</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section id="contact-form">
+        <form action="submit.html" method="POST">
+            <label for="name" class="required">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+
+            <label for="email" class="required">Email</label>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <br>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="Enter your telephone">
+            <br>
+
+            <label for="inquiry-reason">Reason for Inquiry</label>
+            <select name="" id="">
+                <option value="default" selected>Catering</option>
+                <option value="private-party">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+
+            <label for="info" class="required">Additional Information</label>
+            <br>
+            <textarea name="" id="info" cols="30" rows="10"></textarea>
+            <br>
+
+            <label for="best-contact">Best days to contact you</label>
+            <input type="checkbox" name="myChoices" value="Monday" />Monday
+            <input type="checkbox" name="myChoices" value="Tuesday" />Tuesday
+            <input type="checkbox" name="myChoices" value="Wednesday" />Wednesday
+            <input type="checkbox" name="myChoices" value="Thursday" />Thursday
+            <input type="checkbox" name="myChoices" value="Friday" />Friday
+            <br>
+
+            <input type="submit">
+        </form>
+    </section>
+
+    <footer>
+        711 4th St SE
+        <br> Minneapolis, MN 55414
+        <br> 651.308.8022
+    </footer>
+
+</body>
+
+</html>
