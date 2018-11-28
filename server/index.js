@@ -14,11 +14,6 @@ app.use(morgan("combined"));
 app.use(bodyParser.json({ type: "*/*" }));
 app.use(cors()); // Fix CORS errors by allowing requests from other domains
 
-// Create the Service Wrapper
-const watson = require("watson-developer-cloud");
-const config = require("./config");
-// Watson Assistant Portion here
-
 router(app); // Give app access to function defined in router.js
 
 // Server Setup - Express talks to outside world

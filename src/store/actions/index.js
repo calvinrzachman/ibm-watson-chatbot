@@ -1,1 +1,1 @@
-export { addMessage, fetchMessage } from "./converse";
+export { addMessage, getResponse } from "./converse";

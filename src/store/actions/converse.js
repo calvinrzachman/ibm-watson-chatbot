@@ -20,20 +20,18 @@ export const fetchMessageFailed = error => {
   };
 };
 
-export const fetchMessage = () => {
+export const getResponse = userInput => {
   // Redux Thunk allows us to return a function in place of the typical action object
   return async (dispatch, getState) => {
     // Takes dispatch function - allows us to return as many actions as we want
-    console.log("[INSIDE fetchMessage]");
     try {
-      console.log("[INSIDE fetchMessage -try]");
-      const response = await axios.get("http://localhost:5090/");
-      // The response should have the message available under response.data
-      // console.log(getState().converse.lastMessage.message);
-      if (response.data !== getState().converse.lastMessage.message)
-        dispatch(addMessage(response.data, false));
+      const watsonsResponse = await axios.put("http://localhost:5090/", {
+        userInput
+      });
+      const textResponse = watsonsResponse.data.output.text[0];
+      if (textResponse !== getState().converse.lastMessage.message)
+        dispatch(addMessage(textResponse, false));
     } catch (err) {
-      console.log("[INSIDE fetchMessage -catch]");
       dispatch(fetchMessageFailed());
     }
   };

@@ -10,10 +10,9 @@ class ChatInput extends Component {
 
   onSubmitMessage = event => {
     event.preventDefault();
-    console.log("[INSIDE onSubmitMessage()]");
-    // const value = document.getElementById("chatInput").value;
     const newMessage = event.target.firstChild.value;
     this.props.addMessage(newMessage, true);
+    this.props.getResponse(newMessage);
     this.setState({ input: "" });
   };
 
@@ -56,7 +55,7 @@ const mapDispatchToProps = dispatch => {
   return {
     addMessage: (message, isUser) =>
       dispatch(actions.addMessage(message, isUser)),
-    fetchMessage: () => dispatch(actions.fetchMessage())
+    getResponse: userInput => dispatch(actions.getResponse(userInput))
   };
 };
 
