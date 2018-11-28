@@ -8,9 +8,7 @@ Ask Watson about how the IBM Finish Line 2018 Event in Boston went.
 
 ## To run the application:
   ### Heroku Deployment
-  The app has been deployed using Heroku and can be found at:
-    
-    https://protected-springs-53898.herokuapp.com/
+  The app has been deployed using Heroku and can be found at: https://protected-springs-53898.herokuapp.com/
   
   ### Run the application locally
   1. Clone the repository
