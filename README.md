@@ -7,7 +7,7 @@ Watson Assistant with a fully custom React/Redux front end
 Ask Watson about how the IBM Finish Line 2018 Event in Boston went.
 
 ## To run the application:
-  ### Heroku Deployment
+  ### Heroku Deployment (Recommended)
   The app has been deployed using Heroku and can be found at: https://protected-springs-53898.herokuapp.com/
   
   ### Run the application locally
