@@ -30,7 +30,7 @@ Ask Watson about how the IBM Finish Line 2018 Event in Boston went.
  
   And see what Watson has to say   
   
-
+While Watson may not always have the right answer, all conversations are tracked and used to further improve Watson's conversational skill.
 
 
 
