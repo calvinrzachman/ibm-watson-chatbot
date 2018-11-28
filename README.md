@@ -27,6 +27,7 @@ Ask Watson about how the IBM Finish Line 2018 Event in Boston went.
     Where was the event?
     How was the event?
     Who stood out at the event?
+    Any hiring recommendations?
  
   And see what Watson has to say   
   
