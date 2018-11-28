@@ -22,23 +22,33 @@ class ChatInput extends Component {
 
   render() {
     return (
-      <div id="chat">
-        <section>Ask Watson about the IBM Finish Line Event</section>
-        <section>
-          <form action="" onSubmit={event => this.onSubmitMessage(event)}>
-            <input
-              type="text"
-              id="chatInput"
-              placeholder="Type here..."
-              autoComplete="off"
-              onChange={event => this.inputChangedHandler(event)}
-              value={this.state.input}
-            />
-            <hr />
-            <input type="submit" id="submit" />
-          </form>
-        </section>
-        <section>Find out who stood out</section>
+      <div>
+        <div id="chat">
+          <section>Ask Watson about the IBM Finish Line Event</section>
+          <section>
+            <form action="" onSubmit={event => this.onSubmitMessage(event)}>
+              <input
+                type="text"
+                id="chatInput"
+                placeholder="Type here..."
+                autoComplete="off"
+                onChange={event => this.inputChangedHandler(event)}
+                value={this.state.input}
+              />
+              <hr />
+              <input type="submit" id="submit" />
+            </form>
+          </section>
+          <section>Find out who stood out</section>
+        </div>
+        <div id="questions">
+          <h3>Ask Questions Like: </h3>
+          <section>
+            <article>How was the event?</article>
+            <article>Who stood out at the event?</article>
+            <article>Any hiring recommendations?</article>
+          </section>
+        </div>
       </div>
     );
   }

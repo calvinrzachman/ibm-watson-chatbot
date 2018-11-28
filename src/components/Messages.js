@@ -16,6 +16,16 @@ class Messages extends Component {
     });
   }
 
+  componentDidUpdate() {
+    this.updateScroll();
+  }
+
+  updateScroll = () => {
+    console.log("updating scroll");
+    let element = document.getElementById("messages");
+    element.scrollTop = element.scrollHeight;
+  };
+
   render() {
     return (
       <div id="messages">
