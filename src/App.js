@@ -22,25 +22,3 @@ class App extends Component {
 }
 
 export default App;
-
-// {
-/* 
-
-<div id="chat">
-<section>
-    Ask Watson about the IBM Finish Line Event
-</section>
-<section>
-    <form action="" onsubmit="submitMessage()">
-        <label for="chatInput" class="required"></label>
-        <input id="chatInput" type="text" placeholder="Type here..." autocomplete="off" required>
-        <hr>
-        <input type="submit" id="submit" on>
-    </form>
-</section>
-<section>
-    Find out who stood out
-</section>
-</div>
-*/
-// }
