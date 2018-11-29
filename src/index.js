@@ -4,6 +4,8 @@ import "./index.css";
 import { BrowserRouter, Route } from "react-router-dom";
 import Root from "./Root";
 import App from "./App";
+import Chat from "./components/Chat/Chat";
+import Contact from "./components/Contact/Contact";
 import * as serviceWorker from "./serviceWorker";
 
 /*
@@ -16,7 +18,10 @@ import * as serviceWorker from "./serviceWorker";
 ReactDOM.render(
   <Root>
     <BrowserRouter>
-      <Route path="/" component={App} />
+      <App>
+        <Route path="/" exact component={Chat} />
+        <Route path="/contact" component={Contact} />
+      </App>
     </BrowserRouter>
   </Root>,
   document.getElementById("root")

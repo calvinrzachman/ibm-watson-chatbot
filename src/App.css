@@ -15,11 +15,16 @@ footer {
   padding: 5px;
 }
 
+h3 {
+  text-align: center;
+}
+
 footer {
   margin-top: 20px;
 }
 
-nav {
+nav,
+.NavigationItems {
   border-top: thin #5b7d87 solid;
   border-bottom: thin #5b7d87 solid;
   padding-top: 12px;
@@ -29,26 +34,30 @@ nav {
   width: 60%;
 }
 
-nav a {
+nav a,
+.NavigationItems a {
   padding: 10px;
 }
 
-nav a:hover {
+nav a:hover,
+.NavigationItems a {
   font-weight: bold;
 }
 
-nav a:active {
+nav a:active,
+.NavigationItems a {
   /* Isn't currently working */
   text-decoration: none;
 }
 
-nav a:visited {
+nav a:visited,
+.NavigationItems a {
   color: #eeb778;
 }
 
 section {
   text-align: center;
-  padding: 20px;
+  padding: 5px;
 }
 
 /* Chat Styling */
@@ -75,6 +84,19 @@ section {
   border: none;
   color: #fef9ff;
   font-weight: bold;
+}
+
+#questions {
+  margin: 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+#questions article {
+  padding: 5px;
 }
 
 #chatInput:focus,
@@ -106,6 +128,12 @@ hr {
   height: 400px;
   font-size: 0.85em;
 }
+
+#messages section {
+  text-align: center;
+  padding: 20px;
+}
+
 /* Need to autoscroll to bottom of message window */
 
 .container {
@@ -147,4 +175,31 @@ hr {
   overflow-y: auto;
   overflow-x: hidden;
   height: calc(100% - 4rem);
+}
+
+/* Form Styling */
+
+#contact-form {
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 25px;
+}
+
+form input,
+form select {
+  padding: 5px;
+  margin: 10px;
+}
+
+textarea {
+  width: 400px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.required {
+  font-weight: bold;
 }
