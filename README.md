@@ -1,6 +1,6 @@
 # ibm-watson-chatbot
 IBM Finish Line 2018 Boston Feedback ChatBot.
-Watson Assistant with a fully custom React/Redux front end 
+A Watson Assistant application combining Node, Express, and Watson Assistant v1 on the Back End with a fully custom React/Redux Front End 
 
 ![demoIntro](./images/demoIntro.png)
 
