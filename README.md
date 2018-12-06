@@ -9,6 +9,8 @@ Ask Watson about how the IBM Finish Line 2018 Event in Boston went.
   ### Heroku Deployment (Recommended)
   The app has been deployed using Heroku and can be found at: https://protected-springs-53898.herokuapp.com/
   
+    NOTE: Per Heroku, the application must "sleep" for a certain time period each day. If you receive a screen with an "Application Error", simply refresh the page and it should wake and start working. 
+  
   ### Run the application locally
   1. Clone the repository
   2. Make sure you have all the necessary node modules installed (this will need to be completed in both the client and server      directories)  
