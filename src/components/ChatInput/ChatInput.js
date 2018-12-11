@@ -8,6 +8,11 @@ class ChatInput extends Component {
     input: ""
   };
 
+  componentDidMount() {
+    console.log("[INSIDE componentDidMount]");
+    this.props.getResponse("");
+  }
+
   onSubmitMessage = event => {
     event.preventDefault();
     const newMessage = event.target.firstChild.value;
